@@ -1,18 +1,69 @@
 {
   "images": {
-    "icon": "https://images.koji-cdn.com/ea549917-09af-4b57-894c-913b2d5577f2/kojireact.png"
+    "match1": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/thinking2.png",
+    "match2": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/recycling.png",
+    "match3": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/traffic-light.png",
+    "match4": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/snowflake.png",
+    "match5": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/flag.png",
+    "match6": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/lightning.png",
+    "match7": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/explosion.png",
+    "match8": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/rhombus.png",
+    "backgroundImage": "https://i.pinimg.com/originals/47/5a/e0/475ae0b97efeeec4729b3de107f88918.jpg"
   },
   "@@editor": [
     {
       "key": "images",
       "name": "Images",
-      "icon": "🖼️",
+      "icon": "🖼",
       "source": "images.json",
       "fields": [
         {
-          "key": "icon",
-          "name": "Icon",
-          "description": "Icon that spins on the page",
+          "key": "backgroundImage",
+          "name": "Background Image",
+          "description": "URL of Image to place as background",
+          "type": "image",
+          "typeOptions": {
+            "fit": "cover"
+          }
+        },
+        {
+          "name": "Symbol 1",
+          "key": "match1",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 2",
+          "key": "match2",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 3",
+          "key": "match3",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 4",
+          "key": "match4",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 5",
+          "key": "match5",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 6",
+          "key": "match6",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 7",
+          "key": "match7",
+          "type": "image"
+        },
+        {
+          "name": "Symbol 8",
+          "key": "match8",
           "type": "image"
         }
       ]

@@ -1,18 +1,21 @@
-# Koji React Scaffold
+# Memory Game
 
-Welcome to your new Koji React Project.
+*A classic game to test your memory. Flip two cards at a time and remember the cards you've seen before.*
 
--------
-# Where to go
-1. Your Frontend code is located at /frontend/pages and there is an example page at [HomePage](#~/frontend/pages/HomePage/index.js)
-2. Your Backend code is located at /backend/routes and there is an example route at [SampleRoute](#~/backend/routes/SampleRoute/index.js)
-3. 3 Visual Customization Controls (VCCs) have been added to the template. These can be quickly modified to your applicaiton
-    - [Colors](#~/.koji/customization/colors.json!visual) - Change the text color, background color, & link text color.
-    - [Images](#~/.koji/customization/images.json!visual) - Change the spinning icon.
-    - [Strings](#~/.koji/customization/strings.json!visual) - Change the page content text & link text.
+## Things to customize
+- 🐮 Replace all the images with your own
+    * [Open configuration](#~/.koji/images.json!visual)
+- 💅 Change the background and colors of the cards
+    * [Open configuration](#~/.koji/style.json!visual)
+- ⚙️ Add your Google Analytics ID and Open Graph information for sharing
+    * [Open configuration](#~/.koji/metadata.json!visual)
 
-## Any Questions?
+When you're ready, [deploy your project](#~/.koji/deploy.json!visual) and share it with the world! If you decide you want to change something later, you can always redeploy to update!
 
-Join our [Discord Server](https://discord.gg/eQuMJF6) for Koji for any software questions or bugs.   
-Any ideas/issues/fixes/pull requests can get sent to either the [Github Repositotry](https://github.com/jonesnxt/koji-react-scaffold)
-or by message to [the template creator](https://gokoji.com/profile/jones)
+## Code structure
+You can find the code for the main game board [here](#~/frontend/pages/GamePage/index.js).
+
+## Support and suggestions
+Please feel free to [contact me](https://gokoji.com/profile/jones) if you have any suggestions!
+
+*Have fun!*

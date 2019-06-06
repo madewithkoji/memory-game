@@ -1,0 +1,44 @@
+{
+  "style": {
+    "backgroundColor": "#b3cae7",
+    "textColor": "#f5f7ff",
+    "hiddenColor": "#7377e8",
+    "flippedColor": "#ffffff",
+    "matchedColor": "#4bc54b"
+  },
+  "@@editor": [
+    {
+      "key": "style",
+      "name": "Colors",
+      "icon": "💅",
+      "source": "style.json",
+      "fields": [
+        {
+          "name": "Background Color",
+          "type": "color",
+          "key": "backgroundColor"
+        },
+        {
+          "name": "Text Color",
+          "type": "color",
+          "key": "textColor"
+        },
+        {
+          "name": "Hidden Color",
+          "type": "color",
+          "key": "hiddenColor"
+        },
+        {
+          "name": "Flipped Color",
+          "type": "color",
+          "key": "flippedColor"
+        },
+        {
+          "name": "Matched Color",
+          "type": "color",
+          "key": "matchedColor"
+        }
+      ]
+    }
+  ]
+}
