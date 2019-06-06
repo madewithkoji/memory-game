@@ -194,7 +194,7 @@ class HomePage extends React.Component {
 
 		return (
             <Container>
-                <Title>{Koji.config.metadata.title}</Title>
+                <Title>{Koji.config.metadata.name}</Title>
 
                 <Toolbar>
                     <Time>{(moves > 0) ? formatTime(elapsedTime) : 'Click a tile to start'}</Time>

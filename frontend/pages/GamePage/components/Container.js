@@ -7,15 +7,14 @@ const Wrapper = styled.div`
 	height: 100vh;
 	background-color: ${() => Koji.config.style.backgroundColor};
     ${() => Koji.config.images.backgroundImage && `background-image: url('${Koji.config.images.backgroundImage}'); background-size: cover;`}
-	padding: 12px 24px;
 `;
 
 const Inner = styled.div`
-    margin: 0 auto;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 48px);
 `;
 
 const Container = ({ children }) => (

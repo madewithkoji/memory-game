@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" style="touch-action: none; overflow: hidden; overscroll-behavior-y: contain; position: fixed;">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-
+    <title>Made With Koji</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <body style="touch-action: none; overflow: hidden; overscroll-behavior-y: contain; position: fixed;">
+    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <script>
+        function preventPullToRefresh(element) {
+            var prevent = false;
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            document.querySelector(element).addEventListener('touchstart', function(e){
+            if (e.touches.length !== 1) { return; }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+            var scrollY = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+            prevent = (scrollY === 0);
+            });
+
+            document.querySelector(element).addEventListener('touchmove', function(e){
+            if (prevent) {
+                prevent = false;
+                e.preventDefault();
+            }
+            });
+        }
+
+        preventPullToRefresh('#root') // pass #id or html tag into the method
+    </script>
+
   </body>
 </html>

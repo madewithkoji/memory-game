@@ -7,7 +7,7 @@ const CardContainer = styled.div`
     grid-column-gap: 6px;
     grid-row-gap: 6px;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: calc(100vh - 170px);
 `;
