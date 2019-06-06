@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Koji from 'koji-tools';
 
 const Wrapper = styled.div`
 	width: 100%;
 	height: 100vh;
-	background-color: ${({ theme }) => theme.style.backgroundColor};
-    ${({ theme }) => theme.images.backgroundImage && `background-image: url('${theme.images.backgroundImage}'); background-size: cover;`}
+	background-color: ${() => Koji.config.style.backgroundColor};
+    ${() => Koji.config.images.backgroundImage && `background-image: url('${Koji.config.images.backgroundImage}'); background-size: cover;`}
 	padding: 12px 24px;
 `;
 

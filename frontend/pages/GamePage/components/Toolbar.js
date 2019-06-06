@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Koji from 'koji-tools';
 
 const Toolbar = styled.div`
     width: 100%;
@@ -6,7 +7,7 @@ const Toolbar = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: ${({ theme }) => theme.style.textColor};
+    color: ${() => Koji.config.style.textColor};
     opacity: 0.7;
     padding: 0 2px 8px 2px;
     justify-content: space-between;

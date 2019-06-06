@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import GlobalContext from 'GlobalContext';
+import Koji from 'koji-tools';
 
 // Helper functions
 import shuffle from './helpers/shuffle.js';
@@ -53,11 +53,11 @@ class HomePage extends React.Component {
         }
 
         // Create two items for each match
-        const cards = Object.keys(this.context.images)
+        const cards = Object.keys(Koji.config.images)
             .filter(key => key.startsWith('match'))
             .reduce((acc, key) => {
                 const card = {
-                    item: this.context.images[key],
+                    item: Koji.config.images[key],
                     state: 'hidden',
                 };
 
@@ -194,7 +194,7 @@ class HomePage extends React.Component {
 
 		return (
             <Container>
-                <Title>{this.context.metadata.title}</Title>
+                <Title>{Koji.config.metadata.title}</Title>
 
                 <Toolbar>
                     <Time>{(moves > 0) ? formatTime(elapsedTime) : 'Click a tile to start'}</Time>
@@ -233,7 +233,5 @@ class HomePage extends React.Component {
         );
 	}
 }
-
-HomePage.contextType = GlobalContext;
 
 export default HomePage;

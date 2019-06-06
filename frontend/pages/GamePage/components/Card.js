@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Koji from 'koji-tools';
 
 function isImage(t) {
     // check all acceptable image extensions
@@ -51,16 +52,16 @@ const Container = styled.div`
     
     box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.1);
 
-    ${({ isFlipped, isFound, theme }) => {
+    ${({ isFlipped, isFound }) => {
         if (isFound) {
-            return `background-color: ${theme.style.matchedColor};`;
+            return `background-color: ${Koji.config.style.matchedColor};`;
         }
 
         if (isFlipped) {
-            return `background-color: ${theme.style.flippedColor};`;
+            return `background-color: ${Koji.config.style.flippedColor};`;
         }
 
-        return `background-color: ${theme.style.hiddenColor};`;
+        return `background-color: ${Koji.config.style.hiddenColor};`;
     }}
 
     &:hover {

@@ -1,11 +1,10 @@
-const { koji } = process.env;
-console.log(koji);
+import Koji from 'koji-tools';
 
 export default function  handleScore(score, name) {
     return new Promise((resolve, reject) => {
         const backendHost = window.location.host.replace('frontend', 'backend');
         // if theres another route, change this.
-        const route = koji.routes.find((e) => e.name === 'NewScore').route;
+        coKojiroute = koji.routes.find((e) => e.name === 'NewScore').route;
 
         window.fetch(`${window.location.protocol}//${backendHost}${route}`, {
             method: 'post',

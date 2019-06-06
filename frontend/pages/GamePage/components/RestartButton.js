@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Koji from 'koji-tools';
 
 export const RestartRow = styled.div`
     width: 100%;
@@ -10,7 +11,7 @@ export const RestartRow = styled.div`
 export const RestartButton = styled.div`
     cursor: pointer;
     font-weight: bold;
-    color: ${({ theme }) => theme.style.textColor};
+    color: ${() => Koji.config.style.textColor};
     opacity: 0.7;
     padding-top: 12px;
 

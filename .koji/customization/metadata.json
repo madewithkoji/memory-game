@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "name": "Koji React Scaffold",
-    "short_name": "React App",
-    "description": "A React scaffold modified specifically for Koji. Easily customizable at gokoji.com.",
-    "image": "https://images.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/kojireact.png",
-    "icon": "https://objects.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/94e432a7-951b-4b41-a726-d5d9fc66c533.ico",
+    "name": "Memory Game",
+    "short_name": "Memory Game",
+    "description": "A classic game to test your memory. Flip two cards at a time and remember the cards you've seen before.\n",
+    "image": "https://images.koji-cdn.com/794948e1-a46d-48a4-96d7-20faad6c9caf/603d21b396784663b03767229ab335c1.png",
+    "icon": "https://images.koji-cdn.com/891bf871-9e3f-4119-aba4-3f1d690c6c38/flag.png",
     "icon192": "",
     "icon512": "",
     "gaCode": ""
@@ -22,9 +22,9 @@
           "description": "Will show up as title on Google and Facebook"
         },
         {
-            "key": "short_name",
-            "name": "Short Name for your App",
-            "description": "A shorter version of you App name used for PWA's"
+          "key": "short_name",
+          "name": "Short Name for your App",
+          "description": "A shorter version of you App name used for PWA's"
         },
         {
           "key": "description",
