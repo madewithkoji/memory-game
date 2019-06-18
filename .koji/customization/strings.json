@@ -1,0 +1,20 @@
+{
+  "strings": {
+    "title": "Memory Game"
+  },
+  "@@editor": [
+    {
+      "key": "strings",
+      "name": "Strings",
+      "icon": "📚",
+      "source": "strings.json",
+      "fields": [
+        {
+          "name": "Title",
+          "type": "text",
+          "key": "title"
+        }
+      ]
+    }
+  ]
+}
