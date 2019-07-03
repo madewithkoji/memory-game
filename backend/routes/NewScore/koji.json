@@ -1,9 +1,0 @@
-{
-  "routes": [{
-    "name": "NewScore",
-    "path": "backend/routes/NewScore",
-    "route": "/scores/new",
-    "method": "POST",
-    "isProtected": false
-  }]
-}
