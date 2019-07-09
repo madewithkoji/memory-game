@@ -19,7 +19,10 @@ const IconWrapper = styled.div`
 `;
 
 const IconImage = styled.img`
+    height: ${({ boxSize }) => boxSize}px;
     width: ${({ boxSize }) => boxSize}px;
+    object-fit: contain;
+    object-position: center;
     padding: 4px;
 `;
 
